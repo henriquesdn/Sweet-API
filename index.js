@@ -10,6 +10,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json());
 app.use(cors());
 
+let dummyData = [
+    { "Cliente1": { Name: "Joao", Age: "20" } },
+    { "Cliente2": { Name: "Jose", Age: "18" } },
+    { "Cliente3": { Name: "Maria", Age: "22" } },
+];
+
 app.listen(2001, () => {
     console.log("Express started at http://localhost:2001");
 });
