@@ -16,6 +16,10 @@ let dummyData = [
     { "Cliente3": { Name: "Maria", Age: "22" } },
 ];
 
+app.get("/", (req, res) => {
+    return res.json(dummyData)
+});
+
 app.listen(2001, () => {
     console.log("Express started at http://localhost:2001");
 });
